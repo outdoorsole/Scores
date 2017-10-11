@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  Scores
-//
+//  CS112 Assignment 7: Scores
 //  Created by Maribel Montejano on 10/10/17.
 //  Copyright © 2017 Maribel Montejano. All rights reserved.
 //
