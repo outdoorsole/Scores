@@ -49,7 +49,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func whoWon(_ sender: UIButton) {
-        print("whoWon was tapped!")
         let giantsScore: Int = Int(giantsScorelabel.text!)!
         let visitorScore: Int = Int(visitorScoreLabel.text!)!
         
