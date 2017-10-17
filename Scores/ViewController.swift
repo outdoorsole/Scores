@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var giantsScorelabel: UILabel!
     @IBOutlet weak var visitorScoreLabel: UILabel!
+    @IBOutlet weak var winningTeamLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,23 @@ class ViewController: UIViewController {
     @IBAction func visitorTwo(_ sender: UIButton) {
         print("visitorTwo button tapped!")
         visitorScoreLabel.text = "2"
+    }
+    
+    @IBAction func whoWon(_ sender: UIButton) {
+        print("whoWon was tapped!")
+        let giantsScore: Int = Int(giantsScorelabel.text!)!
+        let visitorScore: Int = Int(visitorScoreLabel.text!)!
+        
+        if giantsScore < visitorScore {
+            print("visitor won!")
+            winningTeamLabel.text = "Visitor"
+        } else if giantsScore > visitorScore {
+            print("giants won!")
+            winningTeamLabel.text = "Giants"
+        } else {
+            print("tie!")
+            winningTeamLabel.text = "Tie"
+        }
     }
     
 }

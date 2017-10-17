@@ -90,8 +90,11 @@
                                 <rect key="frame" x="126" y="191" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="who won?"/>
+                                <connections>
+                                    <action selector="whoWon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="unb-CA-G1m"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Giants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsd-WX-SQj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsd-WX-SQj">
                                 <rect key="frame" x="136" y="222" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -112,6 +115,7 @@
                     <connections>
                         <outlet property="giantsScorelabel" destination="uIx-46-tMQ" id="ATD-8x-evZ"/>
                         <outlet property="visitorScoreLabel" destination="Yfi-iq-Ruw" id="AEB-yf-2HH"/>
+                        <outlet property="winningTeamLabel" destination="Zsd-WX-SQj" id="TgO-kY-TgD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
