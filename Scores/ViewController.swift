@@ -25,32 +25,26 @@ class ViewController: UIViewController {
     }
 
     @IBAction func giantsZero(_ sender: UIButton) {
-        print("giantsZero button tapped!")
         giantsScorelabel.text = "0"
     }
     
     @IBAction func giantsOne(_ sender: UIButton) {
-        print("giantsOne button tapped!")
         giantsScorelabel.text = "1"
     }
     
     @IBAction func giantsTwo(_ sender: UIButton) {
-        print("giantsTwo button tapped!")
         giantsScorelabel.text = "2"
     }
     
     @IBAction func visitorZero(_ sender: UIButton) {
-        print("visitorZero button tapped!")
         visitorScoreLabel.text = "0"
     }
     
     @IBAction func visitorOne(_ sender: UIButton) {
-        print("visitorOne button tapped!")
         visitorScoreLabel.text = "1"
     }
     
     @IBAction func visitorTwo(_ sender: UIButton) {
-        print("visitorTwo button tapped!")
         visitorScoreLabel.text = "2"
     }
     
@@ -60,13 +54,10 @@ class ViewController: UIViewController {
         let visitorScore: Int = Int(visitorScoreLabel.text!)!
         
         if giantsScore < visitorScore {
-            print("visitor won!")
             winningTeamLabel.text = "Visitor"
         } else if giantsScore > visitorScore {
-            print("giants won!")
             winningTeamLabel.text = "Giants"
         } else {
-            print("tie!")
             winningTeamLabel.text = "Tie"
         }
     }
