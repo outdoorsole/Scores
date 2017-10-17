@@ -59,16 +59,25 @@
                                 <rect key="frame" x="166" y="130" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="visitorZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APC-jM-5xM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjl-cD-xv2">
                                 <rect key="frame" x="215" y="130" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="visitorOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8U-vI-x7w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJS-kh-hOY">
                                 <rect key="frame" x="263" y="130" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="visitorTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2Q-WX-KPG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfi-iq-Ruw">
                                 <rect key="frame" x="225" y="101" width="11" height="21"/>
@@ -102,6 +111,7 @@
                     </view>
                     <connections>
                         <outlet property="giantsScorelabel" destination="uIx-46-tMQ" id="ATD-8x-evZ"/>
+                        <outlet property="visitorScoreLabel" destination="Yfi-iq-Ruw" id="AEB-yf-2HH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

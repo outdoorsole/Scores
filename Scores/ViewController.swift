@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var giantsScorelabel: UILabel!
+    @IBOutlet weak var visitorScoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,21 @@ class ViewController: UIViewController {
     @IBAction func giantsTwo(_ sender: UIButton) {
         print("giantsTwo button tapped!")
         giantsScorelabel.text = "2"
+    }
+    
+    @IBAction func visitorZero(_ sender: UIButton) {
+        print("visitorZero button tapped!")
+        visitorScoreLabel.text = "0"
+    }
+    
+    @IBAction func visitorOne(_ sender: UIButton) {
+        print("visitorOne button tapped!")
+        visitorScoreLabel.text = "1"
+    }
+    
+    @IBAction func visitorTwo(_ sender: UIButton) {
+        print("visitorTwo button tapped!")
+        visitorScoreLabel.text = "2"
     }
     
 }
