@@ -23,12 +23,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func giantsZero(_ sender: UIButton) {
+        print("giantsZero button tapped!")
+        giantsScorelabel.text = "0"
     }
     
     @IBAction func giantsOne(_ sender: UIButton) {
+        print("giantsOne button tapped!")
+        giantsScorelabel.text = "1"
     }
     
     @IBAction func giantsTwo(_ sender: UIButton) {
+        print("giantsTwo button tapped!")
+        giantsScorelabel.text = "2"
     }
     
 }
